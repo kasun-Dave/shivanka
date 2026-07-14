@@ -14,13 +14,17 @@ function JsonLd() {
     image: `${doctor.canonicalUrl}images/profile/doctor-main.jpg`,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Kandy',
+      addressLocality: 'Mahiyanganaya',
       addressCountry: 'LK',
       streetAddress: doctor.clinicAddress,
     },
     areaServed: {
       '@type': 'City',
-      name: 'Kandy',
+      name: 'Mahiyanganaya',
+    },
+    worksFor: {
+      '@type': 'Hospital',
+      name: 'Base Hospital Mahiyanganaya',
     },
     medicalSpecialty: doctor.specialty,
     alumniOf: {

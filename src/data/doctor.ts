@@ -20,7 +20,7 @@ import type {
 export const siteConfig: SiteConfig = {
   siteName: 'Dr. Shivanka Rajapakshe',
   siteDescription:
-    'Professional medical consultation in Kandy, Sri Lanka. Patient-focused care with evidence-based treatment.',
+    'Medical doctor at Base Hospital Mahiyanganaya, Sri Lanka. Patient-focused care with evidence-based treatment.',
   // Set to false to hide the testimonials section entirely
   showTestimonials: true,
 };
@@ -28,15 +28,14 @@ export const siteConfig: SiteConfig = {
 export const doctor: DoctorProfile = {
   name: 'Dr. Shivanka Rajapakshe',
   title: 'Medical Doctor',
-  location: 'Kandy, Sri Lanka',
+  location: 'Mahiyanganaya, Sri Lanka',
   school: 'Dharmaraja College',
   // [PLACEHOLDER] — Replace with actual medical specialty
   specialty: '[PLACEHOLDER] Medical Specialty — e.g. General Practitioner',
   shortIntro:
-    'Dedicated to providing compassionate, patient-centred healthcare in Kandy. Committed to evidence-based medicine and clear communication with every patient.',
-  // [PLACEHOLDER] — Replace with actual biography
+    'Medical doctor serving patients at Base Hospital Mahiyanganaya. Dedicated to compassionate, patient-centred healthcare and evidence-based medicine.',
   biography:
-    '[PLACEHOLDER] Dr. Shivanka Rajapakshe is a medical professional based in Kandy, Sri Lanka. With a strong foundation in clinical medicine and a commitment to personalised patient care, he strives to make every consultation thorough, respectful, and informative. Replace this text with the doctor\'s actual professional biography.',
+    'Dr. Shivanka Rajapakshe is a medical doctor at Base Hospital Mahiyanganaya, Sri Lanka — a government hospital serving the Mahiyanganaya community. Educated at Dharmaraja College, he is committed to personalised patient care, clear communication, and thorough clinical consultation for every patient.',
   // [PLACEHOLDER] — Replace with actual medical philosophy
   philosophy:
     '[PLACEHOLDER] I believe that good medicine begins with listening. Every patient deserves time, clarity, and treatment plans grounded in the latest medical evidence. Replace this with the doctor\'s personal medical philosophy.',
@@ -46,22 +45,18 @@ export const doctor: DoctorProfile = {
   registrationNumber: '[PLACEHOLDER] SLMC Registration Number',
   // [PLACEHOLDER] — Replace with actual university
   university: '[PLACEHOLDER] Medical University Name',
-  // [PLACEHOLDER] — Replace with actual hospital
-  hospital: '[PLACEHOLDER] Hospital Name',
-  // [PLACEHOLDER] — Replace with actual clinic
-  clinic: '[PLACEHOLDER] Clinic Name',
-  // [PLACEHOLDER] — Replace with actual phone number (format: +94XXXXXXXXX)
-  phone: '[PLACEHOLDER] +94 XX XXX XXXX',
+  hospital: 'Base Hospital Mahiyanganaya',
+  clinic: 'Base Hospital Mahiyanganaya',
+  phone: '055 493 6722',
   // [PLACEHOLDER] — Replace with actual WhatsApp number (digits only, e.g. 94771234567)
   whatsapp: '',
   // [PLACEHOLDER] — Replace with actual email
   email: '[PLACEHOLDER] doctor@email.com',
-  // [PLACEHOLDER] — Replace with actual consultation hours
-  consultationHours: '[PLACEHOLDER] Mon–Fri: 9:00 AM – 5:00 PM | Sat: 9:00 AM – 1:00 PM',
-  // [PLACEHOLDER] — Replace with actual clinic address
-  clinicAddress: '[PLACEHOLDER] Clinic Address, Kandy, Sri Lanka',
-  // [PLACEHOLDER] — Replace with actual Google Maps URL
-  googleMapsUrl: 'https://maps.google.com/?q=Kandy+Sri+Lanka',
+  consultationHours: 'Open 24 hours (Government Hospital)',
+  clinicAddress:
+    'Base Hospital Mahiyanganaya, Bibile - Uraniya - Mahiyanganaya Rd, Mahiyanganaya, Sri Lanka',
+  googleMapsUrl:
+    'https://www.google.com/maps/search/Base+Hospital+Mahiyanganaya',
   // [PLACEHOLDER] — Replace with actual canonical URL after deployment
   canonicalUrl: 'https://kasun-dave.github.io/shivanka/',
   social: {
@@ -179,12 +174,12 @@ export const certifications: Certification[] = [
 export const experience: Experience[] = [
   {
     id: 'exp-1',
-    role: '[PLACEHOLDER] Medical Officer',
-    organization: '[PLACEHOLDER] Hospital / Clinic Name',
+    role: 'Medical Doctor',
+    organization: 'Base Hospital Mahiyanganaya',
     period: '[PLACEHOLDER] 20XX – Present',
     description:
-      '[PLACEHOLDER] Description of role and responsibilities. Replace with actual experience details.',
-    isPlaceholder: true,
+      'Providing medical care to patients at Base Hospital Mahiyanganaya, a government hospital serving the Mahiyanganaya region.',
+    isPlaceholder: false,
   },
   {
     id: 'exp-2',
@@ -197,13 +192,12 @@ export const experience: Experience[] = [
   },
 ];
 
-// [PLACEHOLDER] — Replace with actual affiliations
 export const affiliations: Affiliation[] = [
   {
     id: 'aff-1',
-    name: '[PLACEHOLDER] Hospital / Clinic Affiliation',
-    type: 'Primary Practice',
-    isPlaceholder: true,
+    name: 'Base Hospital Mahiyanganaya',
+    type: 'Government Hospital — Primary Practice',
+    isPlaceholder: false,
   },
   {
     id: 'aff-2',
@@ -239,7 +233,7 @@ export const whyChoose: WhyChooseItem[] = [
     id: 'appointments',
     title: 'Convenient Appointments',
     description:
-      'Flexible scheduling options including in-person and online consultations in Kandy.',
+      'Flexible scheduling for in-person consultations at Base Hospital Mahiyanganaya.',
     icon: 'Clock',
   },
 ];
@@ -247,15 +241,15 @@ export const whyChoose: WhyChooseItem[] = [
 export const trustIndicators: TrustIndicator[] = [
   { id: 'patient-focused', label: 'Patient-Focused Care', icon: 'HeartHandshake' },
   { id: 'professional', label: 'Professional Consultation', icon: 'Award' },
-  { id: 'kandy', label: 'Kandy-Based Doctor', icon: 'MapPin' },
+  { id: 'mahiyanganaya', label: 'Mahiyanganaya, Sri Lanka', icon: 'MapPin' },
 ];
 
 export const galleryItems: GalleryItem[] = [
   {
     id: 'gallery-1',
     src: '/images/gallery/gallery-1.jpg',
-    alt: 'Dr. Shivanka Rajapakshe outdoors in Kandy',
-    caption: 'Dr. Shivanka Rajapakshe — Kandy, Sri Lanka',
+    alt: 'Dr. Shivanka Rajapakshe outdoors',
+    caption: 'Dr. Shivanka Rajapakshe — Mahiyanganaya, Sri Lanka',
     isPlaceholder: false,
   },
   {
