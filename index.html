@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dr. Shivanka Rajapakshe | Medical Doctor in Kandy, Sri Lanka</title>
+    <meta
+      name="description"
+      content="Professional medical consultation in Kandy, Sri Lanka. Patient-focused care with evidence-based treatment by Dr. Shivanka Rajapakshe."
+    />
+    <meta name="author" content="Dr. Shivanka Rajapakshe" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://kasun-dave.github.io/shivanka/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr. Shivanka Rajapakshe | Medical Doctor in Kandy" />
+    <meta
+      property="og:description"
+      content="Professional medical consultation in Kandy, Sri Lanka. Book an appointment with Dr. Shivanka Rajapakshe."
+    />
+    <meta property="og:url" content="https://kasun-dave.github.io/shivanka/" />
+    <meta property="og:image" content="https://kasun-dave.github.io/shivanka/images/profile/doctor-main.jpg" />
+    <meta property="og:locale" content="en_LK" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dr. Shivanka Rajapakshe | Medical Doctor in Kandy" />
+    <meta
+      name="twitter:description"
+      content="Professional medical consultation in Kandy, Sri Lanka."
+    />
+    <meta name="twitter:image" content="https://kasun-dave.github.io/shivanka/images/profile/doctor-main.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // GitHub Pages SPA redirect handler
+      (function (location) {
+        if (location.search[1] === '/') {
+          var decoded = location.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(
+            null,
+            null,
+            location.pathname.slice(0, -1) + decoded + location.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
