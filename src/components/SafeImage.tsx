@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import { ImageIcon } from 'lucide-react';
 
+function resolveAssetPath(src: string): string {
+  if (src.startsWith('http') || src.startsWith('data:')) return src;
+  const base = import.meta.env.BASE_URL;
+  const path = src.startsWith('/') ? src.slice(1) : src;
+  return `${base}${path}`;
+}
+
 interface SafeImageProps {
   src: string;
   alt: string;
@@ -17,6 +24,7 @@ export default function SafeImage({
   placeholderLabel = 'Image',
 }: SafeImageProps) {
   const [hasError, setHasError] = useState(false);
+  const resolvedSrc = resolveAssetPath(src);
 
   if (hasError) {
     return (
@@ -35,7 +43,7 @@ export default function SafeImage({
 
   return (
     <img
-      src={src}
+      src={resolvedSrc}
       alt={alt}
       className={className}
       loading={loading}
