@@ -1,5 +1,5 @@
 import { GraduationCap, Heart, Users } from 'lucide-react';
-import { doctor } from '../data/doctor';
+import { doctor, profileImages } from '../data/doctor';
 import SafeImage from './SafeImage';
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
             <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-teal-100/50 to-sky-100/50 blur-xl" />
             <div className="relative overflow-hidden rounded-3xl shadow-xl ring-1 ring-navy-100">
               <SafeImage
-                src="/images/profile/doctor-about.jpg"
+                src={profileImages.about}
                 alt={`${doctor.name} — About`}
                 className="aspect-[4/5] w-full object-cover object-top"
                 placeholderLabel="About Photo"

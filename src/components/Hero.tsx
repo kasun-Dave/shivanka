@@ -5,7 +5,7 @@ import {
   ArrowRight,
   Phone,
 } from 'lucide-react';
-import { doctor, trustIndicators } from '../data/doctor';
+import { doctor, trustIndicators, profileImages } from '../data/doctor';
 import SafeImage from './SafeImage';
 import DynamicIcon from './DynamicIcon';
 
@@ -87,7 +87,7 @@ export default function Hero() {
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-teal-400/20 to-sky-400/20 blur-2xl" />
               <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-navy-900/10 ring-1 ring-white/50">
                 <SafeImage
-                  src="/images/profile/doctor-main.jpg"
+                  src={profileImages.main}
                   alt={`Professional portrait of ${doctor.name}`}
                   className="aspect-[3/4] w-full object-cover object-top"
                   loading="eager"

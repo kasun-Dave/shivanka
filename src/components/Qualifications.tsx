@@ -6,6 +6,7 @@ import {
   affiliations,
   doctor,
 } from '../data/doctor';
+import SafeImage from './SafeImage';
 
 export default function Qualifications() {
   return (
@@ -69,16 +70,26 @@ export default function Qualifications() {
               {certifications.map((cert) => (
                 <div
                   key={cert.id}
-                  className="glass-card rounded-2xl p-5 border-l-4 border-teal-500"
+                  className="glass-card overflow-hidden rounded-2xl border-l-4 border-teal-500"
                 >
-                  <h4 className="font-semibold text-navy-800">{cert.title}</h4>
-                  <p className="mt-1 text-sm text-navy-500">{cert.issuer}</p>
-                  <p className="mt-2 text-sm font-medium text-teal-600">{cert.year}</p>
-                  {cert.isPlaceholder && (
-                    <span className="mt-2 inline-block text-xs text-amber-600">
-                      Placeholder
-                    </span>
+                  {cert.image && (
+                    <SafeImage
+                      src={cert.image}
+                      alt={cert.title}
+                      className="aspect-[4/3] w-full object-cover"
+                      placeholderLabel="Certificate"
+                    />
                   )}
+                  <div className="p-5">
+                    <h4 className="font-semibold text-navy-800">{cert.title}</h4>
+                    <p className="mt-1 text-sm text-navy-500">{cert.issuer}</p>
+                    <p className="mt-2 text-sm font-medium text-teal-600">{cert.year}</p>
+                    {cert.isPlaceholder && (
+                      <span className="mt-2 inline-block text-xs text-amber-600">
+                        Placeholder
+                      </span>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

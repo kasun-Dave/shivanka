@@ -48,6 +48,7 @@ export interface Certification {
   title: string;
   issuer: string;
   year: string;
+  image?: string;
   isPlaceholder: boolean;
 }
 

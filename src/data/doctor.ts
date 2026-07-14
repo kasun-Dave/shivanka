@@ -73,6 +73,20 @@ export const doctor: DoctorProfile = {
   },
 };
 
+// =============================================================================
+// IMAGE PATHS — drop files into public/images/ to replace (no code changes)
+// =============================================================================
+
+export const profileImages = {
+  main: '/images/profile/doctor-main.jpg',
+  about: '/images/profile/doctor-about.jpg',
+};
+
+export const certificateImages = {
+  cert1: '/images/certificates/certificate-1.jpg',
+  cert2: '/images/certificates/certificate-2.jpg',
+};
+
 // [PLACEHOLDER] — Replace with actual services matching the doctor's specialty
 export const services: Service[] = [
   {
@@ -236,28 +250,27 @@ export const trustIndicators: TrustIndicator[] = [
   { id: 'kandy', label: 'Kandy-Based Doctor', icon: 'MapPin' },
 ];
 
-// Gallery images — replace files in public/images/gallery/ without changing code
 export const galleryItems: GalleryItem[] = [
   {
     id: 'gallery-1',
     src: '/images/gallery/gallery-1.jpg',
-    alt: 'Professional medical environment',
-    caption: '[PLACEHOLDER] Clinic or professional photograph',
-    isPlaceholder: true,
+    alt: 'Dr. Shivanka Rajapakshe outdoors in Kandy',
+    caption: 'Dr. Shivanka Rajapakshe — Kandy, Sri Lanka',
+    isPlaceholder: false,
   },
   {
     id: 'gallery-2',
     src: '/images/gallery/gallery-2.jpg',
-    alt: 'Medical consultation setting',
-    caption: '[PLACEHOLDER] Professional event or consultation photo',
-    isPlaceholder: true,
+    alt: 'Dr. Shivanka Rajapakshe in white lab coat',
+    caption: 'Professional medical portrait',
+    isPlaceholder: false,
   },
   {
     id: 'gallery-3',
     src: '/images/gallery/gallery-3.jpg',
-    alt: 'Healthcare professional portrait',
-    caption: '[PLACEHOLDER] Additional gallery photograph',
-    isPlaceholder: true,
+    alt: 'Dr. Shivanka Rajapakshe in formal attire with stethoscope',
+    caption: 'Clinical professional portrait',
+    isPlaceholder: false,
   },
 ];
 
