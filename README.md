@@ -143,9 +143,13 @@ This project is pre-configured for the repository **[kasun-Dave/shivanka](https:
 ### One-time GitHub setup
 
 1. Push this code to the `main` branch on GitHub
-2. Go to **Repository → Settings → Pages**
-3. Under **Build and deployment**, set **Source** to **GitHub Actions**
-4. The workflow in `.github/workflows/deploy.yml` will deploy automatically on every push to `main`
+2. Go to **[Repository → Settings → Pages](https://github.com/kasun-Dave/shivanka/settings/pages)**
+3. Under **Build and deployment**, set:
+   - **Source:** `Deploy from a branch`
+   - **Branch:** `gh-pages` → `/ (root)` → **Save**
+4. Go to **[Actions](https://github.com/kasun-Dave/shivanka/actions)** and re-run the latest workflow if needed
+
+The workflow builds the site and pushes the `dist` folder to the `gh-pages` branch automatically on every push to `main`.
 
 ### Manual deployment trigger
 
@@ -158,6 +162,15 @@ After deployment, the site will be available at:
 **https://kasun-dave.github.io/shivanka/**
 
 Update `doctor.canonicalUrl` in `src/data/doctor.ts` and the canonical/OG meta tags in `index.html` if your URL differs.
+
+### Troubleshooting 404 on GitHub Pages
+
+If you see **"There isn't a GitHub Pages site here"**:
+
+1. Confirm code is pushed to the `main` branch
+2. Open **Settings → Pages** and set source to **`gh-pages` branch** (not "GitHub Actions")
+3. Check **Actions** tab — the deploy workflow must show a green checkmark
+4. Wait 1–2 minutes after a successful deploy, then refresh the site
 
 ---
 
